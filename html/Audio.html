@@ -1,0 +1,112 @@
+<link href="../css/stylepage.css" rel="stylesheet" type="text/css">
+<html lang="es">
+    <head>
+    <title>Audio en html</title>
+    </head>
+    <!-- #1B4859 #8FBF9B #BCBF65 #F2CF63 #F2E8C9 -->
+    <style type="text/css">
+        header{
+            background-color: #8FBF9B;
+        }
+        nav,footer{
+            background-color: #1B4859;
+        }
+        main{
+           background-color: #F2E8C9; 
+        }
+        section{
+            background-color: #8FBF9B;
+            display: inline-block;
+            overflow: auto;
+        }
+        p{
+            color: darkslategray;            
+        }
+        h2,h1{
+            color: #1B4859;
+        }
+        nav ul li{
+            background-color: #BCBF65;
+            border-color:#F2CF63; 
+        }
+        nav ul li a{
+            color: #1B4859;
+        }
+        nav ul li:hover{
+            background-color: #F2CF63;
+            border-color:#BCBF65; 
+        }
+        nav ul li a:hover{
+            color: #1B4859;
+        }
+        main nav{
+            background-color: #8FBF9B;}
+        main{
+            text-align: center;}
+        audio{
+            padding-top: 30px;}
+        iframe{
+            padding-top: 30px;}
+        h2,p{
+            text-align: left;}
+    </style>
+    <body>
+    <header>
+        <h1>Audio en html</h1>
+        <h4>Música favorita</h4>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/Listas.html">Listas</a></li>
+            <li><a href="../html/Enlaces.html">Enlaces</a></li>
+            <li><a href="../html/Tablas.html">Tablas</a></li>
+            <li><a href="../html/Imagenes.html">Imágenes</a></li>
+            <li><a href="../html/Audio.html">Audios</a></li>
+            <li><a href="../html/video.html">Videos</a></li>
+            <li><a href="../html/Formularios.html">Formularios</a>
+            </ul>
+        </nav>
+        <main>
+            <section id="m">
+            <h2>Música juguetona</h2>
+            <p>Me gusta la música que me hace sentir feliz, que se siente rara cuando la reproduces, como si te hiciera cosquillas en el cerebro.</p>
+            <p>La música que da "cosquillas en el cerebro" y estimula se debe a cómo ciertos sonidos y patrones activan el sistema de recompensa en el cerebro, liberando dopamina, una sustancia que genera placer. Estas sensaciones suelen estar asociadas con cambios inesperados en el ritmo, armonías o frecuencias que sorprenden y emocionan al oyente, activando regiones cerebrales relacionadas con las emociones y la memoria. Esto puede crear una sensación de bienestar o incluso euforia al escuchar ciertas melodías.</p>
+                <audio controls autoplay loop>
+                    <source src="../Medios/Audio/jumpin.mp3">
+                    El formato de audio no es soportado por tu navegador.
+                </audio>
+                <a href="#menu"><img id="apple" src="../Medios/Iconos/apple.ico" alt="Ícono de enlace"> </a>
+            </section>
+            <section id="i">
+            <h2>Instrumentales</h2>
+            <p>Hay muchos OST (Original Soundtrack) que me gustan mucho, ya sea de peliculas como <b>Coraline</b>, cualquiera del estudio<b>Ghibli</b>, <b>Interestelar</b>, de series y de canciones, como los intrumentales de <b>Twice</b> </p>
+                <audio controls autoplay mute>
+                    <source src="../Medios/Audio/twice.mp3">
+                </audio>
+                <a href="#menu"><img id="apple" src="../Medios/Iconos/apple.ico" alt="Ícono de enlace"> </a>
+            </section>
+            <section id="mi">
+            <h2>Minecraft</h2>
+            <p>El OST de minecraft es de lo mejor que existe, me encanta caminar mientras escucho sus albumes. Dado que mantengo las memorias de jugar con esta música de fondo, en un mundo con shaders que hacen que todo luzca muy bonito, al caminar escuchando esto me hace sentir dentro de minecraft, haciendo que todo se vea tan placentero a mis ojos. Cómo las hojas de los árboles se mueven con el viento, la caminata lenta de las nubes, las aves, e incluso la gente, me hace apreciar el mundo y me relaja.</p>
+            <p>Mi pista favorita sin duda es <b>Cat</b> ya que también es de ese tipo de música que da cosquillas en el cerebro.</p>
+               <iframe style="border: 0; width: 100%; height: auto;" src="https://bandcamp.com/EmbeddedPlayer/album=1349219244/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/artwork=small/track=49118418/transparent=true/" seamless><a href="https://c418.bandcamp.com/album/minecraft-volume-alpha">Minecraft - Volume Alpha de C418</a></iframe>
+                <a href="#menu"><img id="apple" src="../Medios/Iconos/apple.ico" alt="Ícono de enlace"> </a>
+            </section>
+            <section id=l>
+            <h2>Playlist para leer</h2>
+            <p>Me encanta leer cómics, uno de mis favoritos  que actualiza más constantemente es <i>After School Lessons For Unripe Apples</i> y con las sensaciones que me provoca este cómic cree una playlist que uso para cuando leo. Evoca esos sentimientos de amistad, juventud, amor y nostalgia, de esas que te hacen sentir mariposas en el estómago por la emoción.</p>
+               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/35jxFWCQLF5wxshHII0oKV?utm_source=generator" width="100%" height="500px;" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#m">Música</a></li>
+                    <li><a href="#i">Instrumentales</a></li>
+                    <li><a href="#mi">Minecraft</a></li>
+                    <li><a href="#l">Playlist</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer><h6>Elaborado por Marycarmen Ramírez Ramírez</h6></footer>
+    </body>
+</html>

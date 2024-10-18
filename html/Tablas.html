@@ -1,0 +1,432 @@
+<link href="../css/stylepage.css" rel="stylesheet" type="text/css"><html lang="es">
+    <head>
+    <title>TABLAS EN HTML</title>
+    </head>
+    <!-- #F3A1AD #FED3DD #CBA1C9 #93A1C4 #BED1E2 -->
+    <style type="text/css">
+        header{
+            background-color: #93A1C4;
+        }
+        nav,footer{
+            background-color: #F3A1AD;
+        }
+        main{
+           background-color: #CBA1C9; 
+        }
+        section{
+            background-color: #EBEBEB;
+        }
+        h2,h5{
+            color: #93A1C4;
+        }
+        h1{
+            color: #EBEBEB;
+        }
+        P{
+            color: darkslategray;
+        }
+        h3{
+            color: #8EBF5E;
+        }
+        nav ul li{
+            background-color: #FED3DD;
+            border-color:#BED1E2; 
+        }
+        nav ul li a{
+            color: darkslategray;
+        }
+        nav ul li:hover{
+            background-color: #BED1E2;
+            border-color:#FED3DD; 
+        }
+        nav ul li a:hover{
+            color: darkslategray;
+        }
+        main nav{
+            background-color: #F0FFDC;
+        } 
+        .tabla1 {
+            width:100%;
+            margin:0 auto;
+            text-align: center;
+            border-style: solid;
+            border-color: #F3A1AD;
+            border-width: 5px;
+            border-spacing: 2px;
+        }
+        .tabla1 th{
+            background-color: #93A1C4;
+            color: #F7F1E1;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: white;
+            border-width: 3px;
+        }
+        .tabla1 td{
+            background-color: #FED3DD;
+            color: darkslateSgrey;
+            text-align: left;
+            border-radius: 6px;
+            margin: 10px;
+            border-style: solid;
+            border-color: white;
+            border-width: 3px;
+            padding: 5px;
+        }
+        .celda_centrada{
+            text-align: center;
+        }
+
+        .tabla_2{
+            border-collapse: collapse;
+            border-color: #CBA1C9;
+            border-style: solid;
+            border-width: 3px;
+            margin: 0 auto;
+        }
+        .tabla_2 th{
+            background-color: #F3A1AD;
+            color: white;
+            border: solid #CBA1C9;
+
+        }
+        .tabla_2 td{
+            border-color: CBA1C9;
+            background-color:#FED3DD;
+            color: darkslateSgrey;
+            padding: 10px;
+            border-style: dashed;
+        }
+        #tabla_zebra{
+            width: 100%;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #93A1C4;
+        }
+        #tabla_zebra th{
+            border-collapse: collapse;
+            border: solid #93A1C4;
+        }
+        #tabla_zebra td{
+            border-style: solid;
+            border-color: #93A1C4;
+            padding: 1px;
+        }
+        #tabla_zebra tbody tr:nth-child(even){
+            background-color:#BED1E2;
+            color: darkslategrey;
+        }
+        #tabla_zebra tbody tr:nth-child(odd){
+            background-color: #FED3DD;
+            color: darkslategrey;
+        }
+        #tabla_zebra thead tr{
+            background-color: #EBEBEB;
+            color: #93A1C4;
+        }
+        /* #F3A1AD #FED3DD #CBA1C9 #93A1C4 #BED1E2 */
+        .tabla_hover{
+            width: 100%;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border-spacing: inherit;
+            border-color: #F3A1AD;
+            border-radius: 5px;
+        }
+        .tabla_hover th{
+            border: solid #F3A1AD;
+            background-color: #BED1E2;
+            color: darkslategray;
+        }
+        .tabla_hover td{
+            border-style:solid;
+            border-width:2px;
+            border-color: #F3A1AD;
+        }
+        .tabla_hover tr{
+            border-style:solid;
+            border-width:2px;
+            border-color: #F3A1AD;
+            background-color: #FED3DD;
+            color: black;
+        }
+        .tabla_hover tr:hover{
+            background-color: #93A1C4;
+            color: #EBEBEB;
+        }
+    </style>
+    <body>
+        <header>
+           <h1>TABLAS EN HTML</h1> 
+        </header>
+        <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/Listas.html">Listas</a></li>
+            <li><a href="../html/Enlaces.html">Enlaces</a></li>
+            <li><a href="../html/Tablas.html">Tablas</a></li>
+            <li><a href="../html/Imagenes.html">Imágenes</a></li>
+            <li><a href="../html/Audio.html">Audios</a></li>
+            <li><a href="../html/video.html">Videos</a></li>
+            <li><a href="../html/Formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+        <section id="tbl1" style="overflow-x: auto;">
+            <h2>Mis mejores amigos de la vida</h2>
+            <p>Las personas con las que más disfruto estar, con las que me siento cómoda y puedo ser yo misma.</p>
+            <table border="1" class="tabla1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apodo</th>
+                        <th>Amistad</th>
+                        <th>Encuentro</th>
+                        <th>Reunión</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Damaris</td>
+                        <td>Mis, Unnie</td>
+                        <td>Hermana</td>
+                        <td>Nací</td>
+                        <td>Cada 15 días</td>
+                    </tr>
+                    <tr>
+                        <td>Alfredo</td>
+                        <td>Kike, Oppa</td>
+                        <td>Hermano</td>
+                        <td>Nací</td>
+                        <td>Cada 15 días</td>
+                    </tr>
+                    <tr>
+                        <td>Margarita</td>
+                        <td>Magy</td>
+                        <td>Mejor amiga</td>
+                        <td>Secu</td>
+                        <td>Cada 6 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Jimena</td>
+                        <td>Chim, Espoza</td>
+                        <td>Mejor amiga</td>
+                        <td>Prepa</td>
+                        <td>Cada 6 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Jetsali</td>
+                        <td>Jetsa</td>
+                        <td>Amiga a distancia</td>
+                        <td>Prepa</td>
+                        <td>1 vez cada 2 años</td>
+                    </tr>
+                    </tbody>
+                <tfoot></tfoot>
+            </table>
+            <a href="#menu"><img id="dalgi" src="../Medios/Iconos/strawberry.ico" alt="Ícono de enlace"> </a>
+        </section>
+            <section id="tbl2" style="overflow-x: auto;">
+            <h2>Datos de mis amigos </h2>
+            <p>Pulvinar quam eu cum class auctor leo sociosqu lacinia eget, varius gravida urna parturient senectus hendrerit porttitor habitant, bibendum orci cras molestie taciti erat at sollicitudin. Fusce hendrerit pharetra ultricies maecenas consequat tristique morbi ante cras, sapien platea class vulputate egestas orci sociis accumsan, in et nec magna faucibus massa sociosqu sem. Conubia nibh tincidunt laoreet mus blandit suspendisse pharetra nullam dis cum, parturient scelerisque hac massa imperdiet pretium tempus convallis curabitur, sapien potenti etiam faucibus sodales condimentum tortor morbi lectus congue, erat habitant nisi fringilla natoque quis phasellus sollicitudin..</p>
+                <table id="tabla2" class="tabla_2" >
+                   <thead>
+                        <tr>
+                            <th style="width: 200px">Nombre</th>
+                            <th style="text-align: center; padding:0px; width: 150px">Edad</th>
+                            <th style="width: 200px" colspan="2">Teléfono</th>
+                            <th style="width: 150px" >Cooperación</th>
+                       </tr>
+                    </thead>                
+                    <tbody>
+                        <tr>
+                            <td>Jimena Bravo Celis</td>
+                            <td style="text-align: center; padding:0px;">20</td>
+                            <td>2218596321</td>
+                            <td>2218596321</td>
+                            <td class="celda_centrada" style="background-color:#EBEBEB; color: darkslategray;">80</td>
+                        </tr>
+                        <tr>
+                            <td>Margarita Escamilla Escamilla</td>
+                            <td style="text-align: center; padding:0px;">16</td>
+                            <td>7258963451</td>
+                            <td></td>
+                            <td class="celda_centrada" style="background-color:#EBEBEB; color: darkslategray;">60</td>
+                        </tr>
+                        <tr>
+                            <td>Juan Ríos Peralta</td>
+                            <td style="text-align: center; padding:0px;">14</td>
+                            <td>7745698231</td>
+                            <td>2218596321</td>
+                            <td class="celda_centrada" style="background-color:#EBEBEB; color: darkslategray;">100</td>
+                        </tr>
+                        <tr>
+                            <td>Jetsali Soriano</td>
+                            <td style="text-align: center; padding:0px;">18</td>
+                            <td>2221456325</td>
+                            <td>2218596321</td>
+                            <td class="celda_centrada" style="background-color:#EBEBEB; color: darkslategray;">50</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td class="celda_centrada" style= "background-color:#93A1C4; color: #EBEBEB;">290</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <a href="#menu"><img id="dalgi" src="../Medios/Iconos/strawberry.ico" alt="Ícono de enlace"> </a>
+        </section>
+            <section id="tbl3">
+            <h2>Tablas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit cursus senectus tempor id at montes, nisi commodo velit tempus sapien. Risus hac senectus scelerisque fames porta nunc suspendisse luctus fringilla, convallis ridiculus aliquet magnis placerat est mi nisl pretium, sed vehicula tempus vivamus penatibus urna arcu a. Pharetra taciti elementum porta integer consequat vel per habitant venenatis aptent, nisl laoreet sociis nullam facilisis nascetur sem fringilla nulla, interdum in ac suscipit ante dapibus urna dignissim magnis. Vivamus urna pellentesque congue posuere ultricies est libero dignissim interdum, venenatis in dis tincidunt cum felis quis magnis elementum varius, per tellus aliquet himenaeos torquent erat phasellus dictumst.</p>
+                <table id="tabla_zebra">
+                <thead>
+                    <tr>
+                        <th style="width: 20%">Nombre</th>
+                        <th style="width: 10%">Edad</th>
+                        <th style="width: 15%">Deporte</th>
+                        <th style="width: 25%">Teléfono</th>
+                        <th style="width: 40%">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Liliana Reyes Castillo</td>
+                        <td>22</td>
+                        <td>Ciclismo</td>
+                        <td>2221453626</td>
+                        <td>lily0604@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fernanda Ramírez Castillo</td>
+                        <td>20</td>
+                        <td>Gimnasia</td>
+                        <td>2221544152</td>
+                        <td>inesfernanda@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Margarita Escamilla Escamilla</td>
+                        <td>21</td>
+                        <td>Boxeo</td>
+                        <td>7254564545</td>
+                        <td>magyesca@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandra Sosa Pérez</td>
+                        <td>21</td>
+                        <td>Volleyball</td>
+                        <td>7451212122</td>
+                        <td>alee.31@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jimena Bravo Céliz</td>
+                        <td>20</td>
+                        <td>Ciclismo</td>
+                        <td>2224445623</td>
+                        <td>jimbc@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Damariz Ramírez Ramírez</td>
+                        <td>28</td>
+                        <td>Boxeo</td>
+                        <td>2213562456</td>
+                        <td>aon.dari@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alfredo Ramírez Ramírez</td>
+                        <td>27</td>
+                        <td>Atletismo</td>
+                        <td>2213365612</td>
+                        <td>halored@gmail.com</td>
+                    </tr>
+                    </tbody>
+                <tfoot></tfoot>
+            </table>
+                <a href="#menu"><img id="dalgi" src="../Medios/Iconos/strawberry.ico" alt="Ícono de enlace"> </a>
+        </section>
+            <section id="tbl4">
+            <h2>Tablas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit cursus senectus tempor id at montes, nisi commodo velit tempus sapien. Risus hac senectus scelerisque fames porta nunc suspendisse luctus fringilla, convallis ridiculus aliquet magnis placerat est mi nisl pretium, sed vehicula tempus vivamus penatibus urna arcu a. Pharetra taciti elementum porta integer consequat vel per habitant venenatis aptent, nisl laoreet sociis nullam facilisis nascetur sem fringilla nulla, interdum in ac suscipit ante dapibus urna dignissim magnis. Vivamus urna pellentesque congue posuere ultricies est libero dignissim interdum, venenatis in dis tincidunt cum felis quis magnis elementum varius, per tellus aliquet himenaeos torquent erat phasellus dictumst.</p>
+                <table class=tabla_hover>
+                <thead>
+                    <tr>
+                        <th style="width: 20%">Nombre</th>
+                        <th style="width: 10%">Edad</th>
+                        <th style="width: 15%">Deporte</th>
+                        <th style="width: 25%">Teléfono</th>
+                        <th style="width: 40%">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Liliana Reyes Castillo</td>
+                        <td>22</td>
+                        <td>Ciclismo</td>
+                        <td>2221453626</td>
+                        <td>lily0604@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Fernanda Ramírez Castillo</td>
+                        <td>20</td>
+                        <td>Gimnasia</td>
+                        <td>2221544152</td>
+                        <td>inesfer@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Margarita Escamilla Escamilla</td>
+                        <td>21</td>
+                        <td>Boxeo</td>
+                        <td>7254564545</td>
+                        <td>magyesca@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alejandra Sosa Pérez</td>
+                        <td>21</td>
+                        <td>Volleyball</td>
+                        <td>7451212122</td>
+                        <td>alee.31@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jimena Bravo Céliz</td>
+                        <td>20</td>
+                        <td>Ciclismo</td>
+                        <td>2224445623</td>
+                        <td>jimbc@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Damariz Ramírez Ramírez</td>
+                        <td>28</td>
+                        <td>Boxeo</td>
+                        <td>2213562456</td>
+                        <td>aon.dari@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alfredo Ramírez Ramírez</td>
+                        <td>27</td>
+                        <td>Atletismo</td>
+                        <td>2213365612</td>
+                        <td>halored@gmail.com</td>
+                    </tr>
+                    </tbody>
+                <tfoot></tfoot>
+            </table>
+        </section>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#tbl1">Mis mejores amigos</a></li>
+                    <li><a href="#tbl2">Tabla 2</a></li>
+                    <li><a href="#tbl3">Tabla 3</a></li>
+                    <li><a href="#tbl4">Tabla 4</a></li>
+                    
+                </ul>
+            </nav>
+        </main>
+        <footer><h6>Elaborado por Marycarmen Ramírez Ramírez</h6></footer>
+    </body>
+</html>

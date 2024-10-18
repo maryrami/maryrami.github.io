@@ -1,0 +1,164 @@
+<html lang="es">
+<head>
+    <title>Listas</title>
+<link href="../css/stylepage.css" rel="stylesheet" type="text/css">
+    <style>
+        header,nav,main,footer {
+            color: #8894B7;
+        }
+        header {
+            background-color: goldenrod;
+        }
+        nav {
+            background-color: #DDC5A9;
+        }
+        main {
+            background-color: #8894B7;
+        }
+        footer {
+            background-color: goldenrod;
+            color: azure;
+        }
+        section {
+            background-color: #fff1db;
+        }
+        h1 {
+            color: #EBEBEB;
+            /*text-shadow: -2px -2px 0 #EBEBEB, 2px -2px 0 #EBEBEB, -2px 2px 0 #EBEBEB, 2px 2px 0 #EBEBEB;*/
+        }
+        h2 {
+            color: goldenrod;
+        }
+        h5{
+            color: 8894B7;
+        }
+        nav ul li{
+            border-color: goldenrod;
+        }
+        nav ul li a {
+            color: goldenrod;
+        }
+        nav ul li:hover {
+            background-color: #8894B7;
+            color: #EBEBEB;
+            border-color: goldenrod;
+        }
+        nav ul li a:hover {
+            font-weight: bold;
+            color: #EBEBEB;
+        }
+        main ul,
+        main ol {
+            margin-left: 20px;
+        }
+        main ul ul,
+        main ol ul,
+        main ol ol {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Listas en HTML</h1>
+        <h4>Mis favoritos</h4>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/Listas.html">Listas</a></li>
+            <li><a href="../html/Enlaces.html">Enlaces</a></li>
+            <li><a href="../html/Tablas.html">Tablas</a></li>
+            <li><a href="../html/Imagenes.html">Imágenes</a></li>
+            <li><a href="../html/Audio.html">Audios</a></li>
+            <li><a href="../html/video.html">Videos</a></li>
+            <li><a href="../html/Formularios.html">Formularios</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 id="pelis">Películas favoritas</h2>
+            <ol type="a">
+                <li style="padding-top: 10px;">Coraline</li>
+                <li>Megamente</li>
+                <li>Interestelar</li>
+                <li>Spiderman Across the Spider-Verse</li>
+                <li>Frozen</li>
+                <li>Spirited Away</li>
+            </ol>
+            <a href="#menu"><img id="apple" src="../Medios/Iconos/apple.ico" alt="Ícono de enlace"> </a>
+        </section>
+
+        <section>
+            <h2 id="comics">Comics Favoritos</h2>
+            <ul>
+                <li style="padding-top: 10px;">After School Lessons for Unripe Apples</li>
+                <li>Bongchon Bride</li>
+                <li>Koisuru Boukun</li>
+                <li>Your Letter</li>
+            </ul>
+            <a href="#menu"><img id="apple" src="../Medios/Iconos/apple.ico" alt="Ícono de enlace"> </a>
+        </section>
+
+        <section>
+            <h2 id="series">Series favoritas</h2>
+            <ol type="I">
+                        <li style="padding-top: 10px;">Kdramas
+                            <ul>
+                                <li>Queen of Tears</li>
+                                <li>Hometown Cha Cha Cha</li>
+                                <li>Castaway Diva</li>
+                                <li>My Lovely Runner</li>
+                            </ul>
+                        </li>
+                        <li>Anime
+                            <ul>
+                                <li>Card Captor Sakura</li>
+                                <li>Nichijou</li>
+                                <li>HunterxHunter</li>
+                            </ul>
+                        </li>
+                        <li>Otras
+                            <ul>
+                                <li>Bluey</li>
+                                <li>Anne with an E</li>
+                                <li>Actopan</li>
+                                <li>Ixmiquilpan</li>
+                                <li>Tulancingo</li>
+                            </ul>
+                        </li>
+            </ol>
+            <a href="#menu"><img id="apple" src="../Medios/Iconos/apple.ico" alt="Ícono de enlace"> </a>
+        </section>
+
+        <section>
+            <h2 id="rep">Series y películas que repito muy seguido</h2>
+            <dl>
+                <dt>Megamente</dt>
+                <dd>Es muy divertida, tiene buenos chistes, bonita animación, fácil de ver y me recuerda a mi infancia. Me gusta verla mientras hago trabajos o mientras me arreglo para salir</dd>
+
+                <dt>Anne with an E</dt>
+                <dd>Aún recuerdo cuando mi mamá la empezó a ver y a mi me pareció aburrida, la mejor decisión que pude haber tomado fue ver un capítulo con mi mamá, amo esta serie y me duele que haya sido cancelada.</dd>
+
+                <dt>Bluey</dt>
+                <dd>Sus capítulos duran 10 minutos, lo que es ideal para ver en el transporte, mientras espero mi turno en algo o antes de dormir. El acento británico es muy bonito.</dd>
+            </dl>
+        </section>
+    </main>
+        <nav id="menu">
+            <ul>
+                <li><a href="#pelis">Películas</a></li>
+                <li><a href="#comics">Cómics</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#rep">Repetidos</a></li>
+            </ul>
+        </nav>
+    <footer>
+        <h5>Elaborado por Marycarmen Ramírez Ramírez</h5>
+    </footer>
+</body>
+
+</html>

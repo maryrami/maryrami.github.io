@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Formularios</title>
+<link href="../css/stylepage.css" rel="stylesheet" type="text/css"><style type="text/css">
+    /* #634082 #A690B4 #3B4779 #B76241 #EBD2CE */
+    header{
+        background-color: #A690B4;
+    }
+   
+    form{
+        width: 70%;
+        height: auto;
+        padding: 50px;
+        background-color: #FF8DAA;
+        color: #EBEBEB;
+        margin: 0 auto;
+        text-align: left;
+        font-family: sans-serif;
+		border-radius: 5px;
+    }   
+    label {
+    display: inline-block;
+    padding-bottom: 10px; 
+    padding-top: 10px;
+}
+    label,input,select {
+        margin-left:0;
+    }
+   input[type=text],input[type=password],input[type=number],input[type=date],input[type=url]{
+        width: 100%;
+        color:purple;
+        background-color: #F5A0B8;
+        padding: 8px;
+		margin-top: 3px;
+		margin-bottom: 10px;
+        font-weight: bold;
+        border: 1px solid #EB51B5;
+        border-radius: 5px;
+    }
+    input[type=submit],input[type=reset]{
+        width: 48%;
+        background-color:#CF67A1;
+        color: #EBEBEB;
+        padding: 10px;
+        border-radius: 7px;
+        display: inline-block;
+        margin: 20px auto;
+        text-align: center;
+		border: none;
+		align-content: center;
+    }
+	input[type=submit]:hover,input[type=reset]:hover{
+		background-color: #B562A2;
+	}
+	input[type=submit]:focus,input[type=reset]:focus{
+		background-color: #B562A2;
+	}
+	input[type=text]:focus,input[type=password]:focus,input[type=number]:focus,input[type=date]:focus,input[type=url]:focus{
+        background-color: #F7CEEE;
+        border: 3px solid #A80880;
+        border-color: #EBEBEB;
+		outline: none;
+    }
+    select,textarea{
+        width: 100%;
+		margin-top: 3px;
+		margin-bottom: 10px;
+        color:purple;
+        background-color: #F5A0B8;
+        padding: 8px;
+        font-weight: bold;
+        border: 1px solid #EB51B5;
+        border-radius: 5px;
+    }
+    select:focus,textarea:focus{
+        background-color: #F7CEEE;
+        border: 3px solid #A80880;
+        border-color: #EBEBEB;
+		outline: none;
+    }
+	.radiob {
+    appearance: none;
+    width: 12px; 
+    height: 12px;
+    border-radius: 50%;
+    background-color: #F7CEEE;
+    outline: 2px solid #EB51B5;
+    cursor: pointer;
+}
+
+.radiob:checked {
+    background-color: #CF67A1; 
+    position: relative;
+}
+	.check{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: #F7CEEE;
+    outline: 2px solid #EB51B5;
+    cursor: pointer; 
+    position:relative;
+}
+
+	.check:checked {
+    background-color: #EBEBEB;
+}
+
+	.check:checked::after {
+    content: '';
+    position: absolute;
+    left:4px;
+    bottom: 1px;
+    width: 4px;
+    height: 12px;
+    border: solid #CF67A1; 
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+	input[type="range"] {
+    width: 80%;
+    height: 8px;
+    background: #F7CEEE;
+    border-radius: 4px;
+    outline: none;
+}
+</style>
+</head>
+
+<body>
+<header><h1>FORMULARIOS EN HTML</h1>
+	<h4>Entrevista a mxmtoon</h4>
+	</header>
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="Listas.html">Listas</a></li>
+        <li><a href="Tablas.html">Tablas</a></li>
+        <li><a href="Enlaces.html">Enlaces</a></li>
+        <li><a href="Imagenes.html">Imágenes</a></li>
+        <li><a href="Audio.html">Audio</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="Formularios.html">Formulario</a></li>  
+    </ul>  
+</nav>
+<main>
+  <section>
+    <h2>Pregunta 1</h2>
+    <p>¿Cuál es tú nombre?</p>
+    <form action="" method="get">
+        <label id="name">Nombre:</label>
+        <input type="text" id="nombre1" name="nombre1">
+		<label id="name">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+    </form> 
+  </section>
+  <section>
+    <h2>Pregunta 2</h2>
+    <p>¿Cuál es tu edad?</p>
+    <form id="form1" name="form1" method="post">
+        <label for="number">Edad:</label>
+        <input type="number" name="number" id="number" min="18" max="99">
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+    </form>
+  </section>
+<section>
+	<h2>Pregunta 3</h2>
+	<p>¿Cuándo cumples años?</p>
+	<form id="form3" name="form3" method="get">
+		<label for="fecha">Fecha de nacimiento:</label>
+		<input type="date" id="fecha" name="fecha">
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+<section>
+    <h2>Pregunta 4</h2>
+    <p>¿De dónde eres?</p>
+    <form id="form2" name="form2" method="post">
+      <label for="pais">País</label>
+        <select id="pais" name="pais">
+			<option value="Estados Unidos">Estados Unidos</option>
+            <option value="México">México</option>
+            <option value="Canada">Canada</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Venecia">Venecia</option>
+            <option value="España">España</option>
+        </select>
+	<label for="estado">Estado</label>
+        <select id="estado" name="estado">
+            <option value="Ayowa">Ayowa</option>
+            <option value="Florida">Florida</option>
+            <option value="Delaware">Delaware</option>
+            <option value="California">California</option>
+            <option value="Nueva York">Nueva York</option>
+        </select>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+    </form>
+  </section>
+<section>
+	<h2>Pregunta 5</h2>
+	<p>¿Cuál es tu género musical?</p>
+	<form id="form5" name="form5" method="get">
+		<label>Género musical principal:</label><br>
+		<input type="radio" id="pop" name="genero" value="pop" class="radiob">
+		<label for="pop">Pop</label><br>
+		<input type="radio" id="indie" name="genero" value="indie" class="radiob">
+		<label for="indie">Indie</label><br>
+		<input type="radio" id="folk" name="genero" value="folk" class="radiob">
+		<label for="folk">Folk</label><br>
+		<input type="radio" id="cla" name="genero" value="cla" class="radiob">
+		<label for="cla">Clásica</label><br>
+		<input type="radio" id="kpop" name="genero" value="kpop" class="radiob">
+		<label for="kpop">K-Pop</label><br>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+<section>
+	<h2>Pregunta 6</h2>
+	<p>¿Qué intrumentos tocas?</p>
+	<form id="form6" name="form6" method="get">
+	<label>Instrumentos que toca:</label><br>
+		<input type="checkbox" id="guitarra" name="instrumentos" value="guitarra" class="check">
+		<label for="guitarra">Guitarra</label><br>
+		<input type="checkbox" id="ukelele" name="instrumentos" value="ukelele" class="check">
+		<label for="ukelele">Ukelele</label><br>
+		<input type="checkbox" id="piano" name="instrumentos" value="piano" class="check">
+		<label for="piano">Piano</label><br>
+		<input type="checkbox" id="violin" name="instrumentos" value="violin" class="check">
+		<label for="violin">Violín</label><br>
+		<input type="checkbox" id="flauta" name="instrumentos" value="flauta" class="check">
+		<label for="flauta">Flauta</label><br>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+<section>
+	<h2>Pregunta 7</h2>
+	<p>¿Qué te inspiró a hacer música?</p>
+	<form id="form7" name="form7" method="get">
+		<label for="descrip">Descripción breve:</label><br>
+		<textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+<section>
+	<h2>Pregunta 8</h2>
+	<p>¿Cuál es el color de tu siguiente álbum?</p>
+	<form id="form8" name="form8" method="get">
+		<label for="albumcolor">Selecciona un color:</label>
+  		<input type="color" id="albumcolor" name="albumcolor"><br>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+<section>
+	<h2>Pregunta 9</h2>
+	<p>¿Qué tan fuerte es la conexión con tus fans?</p>
+	<form id="form9" name="form9" method="get">
+		<label for="escala">En una escala del 0 al 10:</label><br>
+  		<span id="escalanum">0</span>
+		<input type="range" id="escala" name="vol" min="0" max="10">
+		<span id="escalanum2">10</span>
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+<section>
+	<h2>Pregunta 10</h2>
+	<p>¿Cuál es tu canción favorita?</p>
+	<form id="form10" name="form10" method="get">
+		<label for="url">Comparte un link</label>
+		<input type="url" id="murl" name="url" placeholder="https://">
+		
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Restablecer">
+	</form>
+</section>
+</main>
+<footer>
+  <h5>Elaborado por Marycarmen Ramírez Ramírez</h5>
+</footer>
+</body>
+</html>
